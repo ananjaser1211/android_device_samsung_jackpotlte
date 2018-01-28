@@ -22,18 +22,16 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := exynos8895-greatlte_eur_open_defconfig
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/universal8895_greatlte
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 # Image
-BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/jackpotlte/bootimg.mk
+TARGET_PREBUILT_KERNEL := device/samsung/jackpotlte/Image
+TARGET_PREBUILT_DTB := device/samsung/jackpotlte/dt.img
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPQC03B001KU
-TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
