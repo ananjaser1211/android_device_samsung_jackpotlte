@@ -1,1 +1,1 @@
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_greatlte.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_jackpotlte.mk
