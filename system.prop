@@ -1,5 +1,8 @@
-ro.hardware=samsungexynos8895
-ro.chipname=exynos8895
-ro.arch=exynos8895
-ro.boot.bootdevice=11120000.ufs
-ro.sf.lcd_density=560
+ro.hardware=samsungexynos7885
+ro.chipname=exynos7885
+ro.arch=exynos7885
+ro.boot.bootdevice=13500000.dwmmc0
+ro.lcd_min_brightness=0
+ro.lcd_brightness=150
+persist.sys.usb.config=adb
+ro.sf.lcd_density=480
