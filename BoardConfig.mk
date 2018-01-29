@@ -42,6 +42,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 460800000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 38912000
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4063232000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25718784000
+BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -69,10 +70,10 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 
 # Include
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/jackpotlte/include
+# TARGET_SPECIFIC_HEADER_PATH := device/samsung/jackpotlte/include
 
 # SELinux Policies
-BOARD_SEPOLICY_DIRS := device/samsung/jackpotlte/sepolicy
+# BOARD_SEPOLICY_DIRS := device/samsung/jackpotlte/sepolicy
 
 # Encryption support
 TW_INCLUDE_CRYPTO := true
